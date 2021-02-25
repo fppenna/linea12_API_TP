@@ -61,7 +61,7 @@ import plotly.express as px
 # In[2]:
 
 
-url='https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?agency_id=6&client_id=a0119e3e5ebf4fb4a0cbdea04de12037&client_secret=19967Bb82e7e4C7bab2CA49e3d631C3E' 
+url='https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?agency_id=6&client_id=*******&client_secret=*******' 
 pattern="({.+?})"
 response= requests.get(url)
 
@@ -124,7 +124,7 @@ type(json1)
 # In[9]:
 
 
-url='https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?agency_id=6&client_id=a0119e3e5ebf4fb4a0cbdea04de12037&client_secret=19967Bb82e7e4C7bab2CA49e3d631C3E' 
+url='https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?agency_id=6&client_id=*****&client_secret=*****' 
 
 
 # ### Alternativa para construir la url
@@ -150,9 +150,9 @@ def url_bus(id_agency, user, psw):
 
 agency_id= '6'
 
-client_id= 'a0119e3e5ebf4fb4a0cbdea04de12037'
+client_id= '****'
 
-client_secret= '19967Bb82e7e4C7bab2CA49e3d631C3E'
+client_secret= '****'
 
 url_incompleta= 'https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?agency_id={}&client_id={}&client_secret={}' 
 
